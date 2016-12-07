@@ -1,6 +1,6 @@
 {% set name = "numpy_sugar" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "93347f682931dbabdde22a4c33e9305bea9db21db17f3a1c0a321e282a711262" %}
+{% set version = "1.0.8" %}
+{% set sha256 = "21d8852f7d997dfac0cc95b378043b8cea1ced50866cd4812c60b7c53cfab046" %}
 
 package:
   name: {{ name|lower }}
@@ -49,13 +49,13 @@ test:
     - python -c "import numpy_sugar; numpy_sugar.test()"
 
 about:
-  home: https://github.com/Horta/numpy-sugar
+  home: https://github.com/glimix/numpy-sugar
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: 'Missing NumPy functionalities'
   doc_url: http://numpy-sugar.readthedocs.io
-  dev_url: https://github.com/Horta/numpy-sugar
+  dev_url: https://github.com/glimix/numpy-sugar
 
 extra:
   recipe-maintainers:
