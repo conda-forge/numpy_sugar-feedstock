@@ -1,4 +1,4 @@
-About numpy_sugar
+About numpy-sugar
 =================
 
 Home: https://github.com/glimix/numpy-sugar
@@ -20,28 +20,28 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-f
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/version.svg)](https://anaconda.org/conda-forge/numpy_sugar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/downloads.svg)](https://anaconda.org/conda-forge/numpy_sugar)
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy-sugar/badges/version.svg)](https://anaconda.org/conda-forge/numpy-sugar)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy-sugar/badges/downloads.svg)](https://anaconda.org/conda-forge/numpy-sugar)
 
-Installing numpy_sugar
+Installing numpy-sugar
 ======================
 
-Installing `numpy_sugar` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `numpy-sugar` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `numpy_sugar` can be installed with:
+Once the `conda-forge` channel has been enabled, `numpy-sugar` can be installed with:
 
 ```
-conda install numpy_sugar
+conda install numpy-sugar
 ```
 
-It is possible to list all of the versions of `numpy_sugar` available on your platform with:
+It is possible to list all of the versions of `numpy-sugar` available on your platform with:
 
 ```
-conda search numpy_sugar --channel conda-forge
+conda search numpy-sugar --channel conda-forge
 ```
 
 
@@ -83,7 +83,7 @@ Terminology
 Updating numpy_sugar-feedstock
 ==============================
 
-If you would like to improve the numpy_sugar recipe or build a new
+If you would like to improve the numpy-sugar recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
