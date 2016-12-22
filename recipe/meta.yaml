@@ -1,6 +1,6 @@
-{% set name = "numpy_sugar" %}
-{% set version = "1.0.8" %}
-{% set sha256 = "21d8852f7d997dfac0cc95b378043b8cea1ced50866cd4812c60b7c53cfab046" %}
+{% set name = "numpy-sugar" %}
+{% set version = "1.0.20" %}
+{% set sha256 = "5936cdc4c3f48dd8b2f4d83a36efde7f29dbe4fc8fed6dd4ca1870f824825fac" %}
 
 package:
   name: {{ name|lower }}
@@ -23,30 +23,22 @@ requirements:
     - python
     - setuptools
     - pytest-runner
-    - build_capi
+    - build-capi
     - ncephes
-    - cffi
-    - numba
-    - toolchain
-    - vc 14           # [win]
+    - numpy >=1.9.3
+    - vc 14  # [win]
   run:
     - python
     - ncephes
-    - scipy
-    - numpy
-    - numba
-    - cffi
+    - numpy >=1.9.3
 
 test:
   requires:
-    - pytest
-    - numpy
-    - scipy
-    - numba
+    - pytest >=3
   imports:
     - numpy_sugar
   commands:
-    - python -c "import numpy_sugar; numpy_sugar.test()"
+    - python -c "import sys; import numpy_sugar; sys.exit(numpy_sugar.test())"
 
 about:
   home: https://github.com/glimix/numpy-sugar
