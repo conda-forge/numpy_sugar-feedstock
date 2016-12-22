@@ -1,7 +1,7 @@
 About numpy_sugar
 =================
 
-Home: https://github.com/Horta/numpy-sugar
+Home: https://github.com/glimix/numpy-sugar
 
 Package license: MIT
 
@@ -10,6 +10,18 @@ Feedstock license: BSD 3-Clause
 Summary: Missing NumPy functionalities
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/numpy_sugar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/numpy_sugar-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/numpy_sugar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/numpy-sugar-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/version.svg)](https://anaconda.org/conda-forge/numpy_sugar)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/downloads.svg)](https://anaconda.org/conda-forge/numpy_sugar)
 
 Installing numpy_sugar
 ======================
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/numpy_sugar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/numpy_sugar-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/numpy_sugar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/numpy-sugar-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/version.svg)](https://anaconda.org/conda-forge/numpy_sugar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy_sugar/badges/downloads.svg)](https://anaconda.org/conda-forge/numpy_sugar)
 
 
 Updating numpy_sugar-feedstock
