@@ -80,7 +80,7 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating numpy_sugar-feedstock
+Updating numpy-sugar-feedstock
 ==============================
 
 If you would like to improve the numpy-sugar recipe or build a new
@@ -90,7 +90,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/numpy_sugar-feedstock are
+Note that all branches in the conda-forge/numpy-sugar-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
