@@ -12,10 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True           # [win and py<35]
-  features:
-    - vc14             # [win]
+  number: 1
+  skip: True  # [win and py<35]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -26,7 +24,6 @@ requirements:
     - build-capi
     - ncephes
     - numpy >=1.9.3
-    - vc 14  # [win]
   run:
     - python
     - ncephes
