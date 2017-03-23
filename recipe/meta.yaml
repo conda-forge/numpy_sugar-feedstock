@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.0.24" %}
-{% set sha256 = "2aaa6277edf77fa4a00ccef19d854662b29cc3b17e5fe75e7f3b9320747c8959" %}
+{% set version = "1.0.28" %}
+{% set sha256 = "d4ab54029a57995d81a0b9bfa06804f14de04fb35e18da58b236075e6bce9c56" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win and py<35]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
