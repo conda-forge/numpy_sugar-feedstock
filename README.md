@@ -1,7 +1,7 @@
 About numpy-sugar
 =================
 
-Home: https://github.com/glimix/numpy-sugar
+Home: https://github.com/limix/numpy-sugar
 
 Package license: MIT
 
