@@ -28,8 +28,6 @@ requirements:
     - python
     - ncephes
     - numpy >=1.11
-    - numpy-sugar >=1.0.34
-    - pytables >=3.3.0
 
 test:
   requires:
