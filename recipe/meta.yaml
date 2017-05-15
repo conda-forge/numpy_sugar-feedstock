@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.0.35" %}
-{% set sha256 = "7305e79f13c1b6d3e8508d113096a60a76d28e71a57bee16f5606eb0185e7bac" %}
+{% set version = "1.0.41" %}
+{% set sha256 = "bbf72734e9e5795ca156c62746a51be3ad4805031bbee328b663937b0805c205" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and py<35]
+  skip: True  # [win32 or linux32 or (win64 and py27)]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -22,12 +22,14 @@ requirements:
     - setuptools
     - pytest-runner
     - build-capi
-    - ncephes >=1.0.22
+    - ncephes >=1.0.37
     - numpy >=1.11
   run:
     - python
-    - ncephes >=1.0.22
+    - ncephes >=1.0.37
     - numpy >=1.11
+    - scipy >=0.18.1
+    - dask >=0.14
 
 test:
   requires:
