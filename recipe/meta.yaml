@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win32 or linux32]
+  skip: True  # [win32 or linux32 or (win64 and py27)]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -22,11 +22,11 @@ requirements:
     - setuptools
     - pytest-runner
     - build-capi
-    - ncephes >=1.0.26
+    - ncephes >=1.0.37
     - numpy >=1.11
   run:
     - python
-    - ncephes >=1.0.26
+    - ncephes >=1.0.37
     - numpy >=1.11
     - scipy >=0.18.1
     - dask >=0.14
