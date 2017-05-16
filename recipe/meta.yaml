@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win32 or linux32 or (win64 and py27)]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -23,11 +23,11 @@ requirements:
     - pytest-runner
     - build-capi
     - ncephes >=1.0.37
-    - numpy >=1.11
+    - numpy >=1.10
   run:
     - python
     - ncephes >=1.0.37
-    - numpy >=1.11
+    - numpy >=1.10
     - scipy >=0.18.1
     - dask >=0.14
 
