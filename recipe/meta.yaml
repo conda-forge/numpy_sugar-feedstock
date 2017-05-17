@@ -35,6 +35,7 @@ test:
   requires:
     - pytest >=3
   imports:
+    - ncephes
     - numpy_sugar
   commands:
     - python -c "import sys; import numpy_sugar; sys.exit(numpy_sugar.test())"
