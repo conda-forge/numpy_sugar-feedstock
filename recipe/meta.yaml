@@ -22,11 +22,11 @@ requirements:
     - setuptools
     - pytest-runner
     - build-capi
-    - ncephes >=1.0.37
+    - ncephes >=1.0.38
     - numpy >=1.10
   run:
     - python
-    - ncephes >=1.0.37
+    - ncephes >=1.0.38
     - numpy >=1.10
     - scipy >=0.18.1
     - dask >=0.14
