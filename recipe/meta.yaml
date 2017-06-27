@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.0.41" %}
-{% set sha256 = "bbf72734e9e5795ca156c62746a51be3ad4805031bbee328b663937b0805c205" %}
+{% set version = "1.0.42" %}
+{% set sha256 = "9107ef21bcc41e9fae41ec817507e7ea2a1b93e019b3ebd99eb7c80fcb0263b6" %}
 
 package:
   name: {{ name|lower }}
@@ -22,14 +22,14 @@ requirements:
     - setuptools
     - pytest-runner
     - build-capi
-    - ncephes >=1.0.38
+    - ncephes >=1.0.40
     - numpy >=1.10
   run:
     - python
-    - ncephes >=1.0.38
+    - ncephes >=1.0.40
     - numpy >=1.10
     - scipy >=0.18.1
-    - dask >=0.14
+    - dask >=0.15
 
 test:
   requires:
