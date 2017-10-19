@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "db387ca29ed827865c93bcc1e0b0347e3de6bbc7b52fa366ebb6e502a5fd8b89" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "eacd8dba34b3c68325b09ed01da56464097e8b6b502dfe5ad9bc5cfe20ae6239" %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +20,12 @@ requirements:
     - python
     - setuptools
     - pytest-runner
-    - numpy >=1.10
+    - numpy >=1.12
   run:
     - python
-    - numpy >=1.10
-    - scipy >=0.18.1
-    - dask >=0.15
+    - numpy >=1.12
+    - scipy >=0.19
+    - dask >=0.15.2
 
 test:
   requires:
