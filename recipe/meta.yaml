@@ -20,10 +20,13 @@ requirements:
     - python
     - setuptools
     - pytest-runner
-    - numpy >=1.12
+    - numpy >=1.14.1
+    - pypandoc
+    - wheel
+    - pip
   run:
     - python
-    - numpy >=1.12
+    - numpy >=1.14.1
     - scipy >=0.19
     - dask >=0.15.2
 
