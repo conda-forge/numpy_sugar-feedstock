@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.2.2" %}
-{% set sha256 = "4ed1f589097fe13401b752eb4deee1e0cd3cf502c423a08d79b0a5013b6ffe19" %}
+{% set version = "1.2.3" %}
+{% set sha256 = "6b01e7ab8dc0d5fc68a66916d94854ca59b9bda31bf441b44896ca34bc9b5508" %}
 
 package:
   name: {{ name|lower }}
@@ -34,7 +34,6 @@ test:
   requires:
     - pytest >=3.2.0
     - pytest-pep8 >=1.0.5
-    - pytest-sugar >=0.9.0
   imports:
     - numpy_sugar
   commands:
