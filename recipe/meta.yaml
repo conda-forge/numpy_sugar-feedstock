@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "eacd8dba34b3c68325b09ed01da56464097e8b6b502dfe5ad9bc5cfe20ae6239" %}
+{% set version = "1.2.3" %}
+{% set sha256 = "6b01e7ab8dc0d5fc68a66916d94854ca59b9bda31bf441b44896ca34bc9b5508" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numpy_sugar-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,10 +20,13 @@ requirements:
     - python
     - setuptools
     - pytest-runner
-    - numpy >=1.12
+    - numpy >=1.14.1
+    - pypandoc
+    - wheel
+    - pip
   run:
     - python
-    - numpy >=1.12
+    - numpy >=1.14.1
     - scipy >=0.19
     - dask >=0.15.2
 
@@ -31,7 +34,6 @@ test:
   requires:
     - pytest >=3.2.0
     - pytest-pep8 >=1.0.5
-    - pytest-sugar >=0.9.0
   imports:
     - numpy_sugar
   commands:
@@ -41,7 +43,7 @@ about:
   home: https://github.com/limix/numpy-sugar
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE.md
   summary: 'Missing NumPy functionalities'
   doc_url: https://numpy-sugar.readthedocs.io
   dev_url: https://github.com/limix/numpy-sugar
