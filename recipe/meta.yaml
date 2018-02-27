@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "eacd8dba34b3c68325b09ed01da56464097e8b6b502dfe5ad9bc5cfe20ae6239" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "4ed1f589097fe13401b752eb4deee1e0cd3cf502c423a08d79b0a5013b6ffe19" %}
 
 package:
   name: {{ name|lower }}
@@ -41,7 +41,7 @@ about:
   home: https://github.com/limix/numpy-sugar
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE.md
   summary: 'Missing NumPy functionalities'
   doc_url: https://numpy-sugar.readthedocs.io
   dev_url: https://github.com/limix/numpy-sugar
