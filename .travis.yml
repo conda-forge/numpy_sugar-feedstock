@@ -8,10 +8,10 @@ osx_image: xcode6.4
 
 env:
   matrix:
-    
-    - CONDA_PY=27
-    - CONDA_PY=35
-    - CONDA_PY=36
+    - CONFIG=osx_python2.7
+    - CONFIG=osx_python3.5
+    - CONFIG=osx_python3.6
+
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
     - secure: "cL4hLAKZQn9gs5XtxAZ7vbfPwcTaYHKatlD9HpxA1KkWvZhQVfNKpZxEesiNi46cDoj4mtO5PuVNTwELZuNdlg5bYJGu1dAEtqTitTNqlrmuv4O8M0PWCeS49oj6oMZY0l8dZnqMCQLYCDI8GqaMxHPesRqvV4vjGAvM5aVgrjvd5aZEaqRdTTfQZisL3qJSJmQ52/KmZHflLbVZchx6z4RsKfT7tthTSYEuIwIlxw7jz0BX/InPed+wDuLgqsPuDTxjFhqwl3Y3OhlKyWm6EiIeTE7Ki7YrmSiWcNrcQwN5LOrr/LPLy/0k42YBOJ4H3WfWuUIZeMck5tei0Bsabu1XpeA6lB1cI2N8qM7C6IBlevkI6XidRjk37nY5OV9r+JQjQfVIP35mnF3Yqrnk1f3a6wkodScSh4UMj8uznCp+HqB/4ttVmQmqMojXzeb4dXfyn5Y1i9PRaqDp4m8+NoBJEqiL3JalZSDPRE3jpenNG/B+6ackbnINNpff4jjEq6hueEMcwYvnb2TPzc4F87dkHq0RDT/P7IQr7Of6MSU5jY5TAe4vyBd9DTiUSTG4j5ANVqOEV+EJI/KpmH8IIXg2ZPmCQXBaMydhU+wMhX2o0zBmwa8dFshTnUa4DD5ZhGwaUYOyvgPEK1FIMZZ6p0+QpzyS6yB5uLz8LACYEM0="
@@ -20,7 +20,7 @@ env:
 before_install:
     # Fast finish the PR.
     - |
-      (curl https://raw.githubusercontent.com/conda-forge/conda-forge-build-setup-feedstock/master/recipe/ff_ci_pr_build.py | \
+      (curl https://raw.githubusercontent.com/conda-forge/conda-forge-ci-setup-feedstock/master/recipe/ff_ci_pr_build.py | \
           python - -v --ci "travis" "${TRAVIS_REPO_SLUG}" "${TRAVIS_BUILD_NUMBER}" "${TRAVIS_PULL_REQUEST}") || exit 1
 
     # Remove homebrew.
@@ -52,10 +52,10 @@ install:
       conda config --add channels defaults
       conda config --add channels conda-forge
       conda config --set show_channel_urls true
-      conda install --yes --quiet conda-forge-build-setup
+      conda install --yes --quiet conda-forge-ci-setup=1
       source run_conda_forge_build_setup
 
 script:
-  - conda build ./recipe
+  - conda build ./recipe -m ./.ci_support/${CONFIG}.yaml
 
-  - upload_or_check_non_existence ./recipe conda-forge --channel=main
+  - upload_or_check_non_existence ./recipe conda-forge --channel=main -m ./.ci_support/${CONFIG}.yaml

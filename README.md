@@ -14,14 +14,16 @@ Summary: Missing NumPy functionalities
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/numpy-sugar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/numpy-sugar-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/numpy-sugar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/numpy-sugar-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/numpy-sugar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/numpy-sugar-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/numpy_sugar-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/numpy_sugar-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/numpy_sugar-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/numpy_sugar-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/numpy-sugar-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy-sugar/badges/version.svg)](https://anaconda.org/conda-forge/numpy-sugar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/numpy-sugar/badges/downloads.svg)](https://anaconda.org/conda-forge/numpy-sugar)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-numpy--sugar-green.svg)](https://anaconda.org/conda-forge/numpy-sugar) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/numpy-sugar.svg)](https://anaconda.org/conda-forge/numpy-sugar) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/numpy-sugar.svg)](https://anaconda.org/conda-forge/numpy-sugar) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/numpy-sugar.svg)](https://anaconda.org/conda-forge/numpy-sugar) |
 
 Installing numpy-sugar
 ======================
