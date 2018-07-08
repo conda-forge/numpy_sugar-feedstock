@@ -14,9 +14,8 @@ Summary: Missing NumPy functionalities
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/numpy_sugar-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/numpy_sugar-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/numpy_sugar-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/numpy_sugar-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/numpy-sugar-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/numpy_sugar-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/numpy_sugar-feedstock)
 
 Current release info
 ====================
