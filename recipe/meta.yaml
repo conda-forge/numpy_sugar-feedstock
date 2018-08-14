@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.2.5" %}
-{% set sha256 = "53709c9fa91216a573e5ea067391b1bd4b60cb0677ce81955bb4ddc7daaa54fd" %}
+{% set version = "1.2.6" %}
+{% set sha256 = "93686eed06010e2c771e813dca6e82d6af5dab327d64bb3721cbae625cdc58fc" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
