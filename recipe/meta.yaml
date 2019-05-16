@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "f38e2fa0a20fd3221a3228345d5daa40c6e041b8c95ec7b7fe57aa7438fa9e66" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "b8c08c135b369f0fd140bc2113e55fc5c838b26ba62c8fe93c118111f7d7018d" %}
 
 package:
   name: {{ name|lower }}
