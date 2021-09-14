@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "8a0015c178f33ecd8749f3f03fc7316d073d477ab83b656aeb257a3103ce1fce" %}
+{% set version = "1.5.3" %}
+{% set sha256 = "98da46042e2148568afabea02b3aa6f9d013c27369225a831d83b64d200625d2" %}
 
 package:
   name: {{ name|lower }}
@@ -18,23 +18,20 @@ build:
 
 requirements:
   host:
+    - pip
     - python
     - setuptools
-    - pytest-runner
-    - numpy >=1.14.1
-    - pypandoc
     - wheel
-    - pip
   run:
-    - python
+    - dask >=2.18.0
     - numpy >=1.14.1
-    - scipy >=0.19
-    - dask >=0.15.2
+    - pytest>=6.1.2
+    - python
+    - scipy>=1.4.1
 
 test:
   requires:
-    - pytest >=3.2.0
-    - pytest-pep8 >=1.0.5
+    - pytest >=6.1.2
   imports:
     - numpy_sugar
   commands:
