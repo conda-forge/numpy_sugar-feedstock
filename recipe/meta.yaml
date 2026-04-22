@@ -1,6 +1,6 @@
 {% set name = "numpy-sugar" %}
-{% set version = "1.5.3" %}
-{% set sha256 = "98da46042e2148568afabea02b3aa6f9d013c27369225a831d83b64d200625d2" %}
+{% set version = "1.5.5" %}
+{% set sha256 = "5bfcfc4049d448bf8d5adf5b500969e73e538a0cbb89e75325c0536c784344e5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numpy_sugar-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/numpy_sugar-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
